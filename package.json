@@ -4,12 +4,20 @@
   "description": "Practice Unit Testing with Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --watchAll --verbose --coverage",
+    "test:watch": "jest --watch",
+    "e2e": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.3.1"
+    "@testing-library/dom": "^9.0.0",
+    "@types/jest": "^29.4.0",
+    "cypress": "^12.6.0",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "react-test-library": "^0.0.1",
+    "react-test-renderer": "^18.2.0"
   }
 }
